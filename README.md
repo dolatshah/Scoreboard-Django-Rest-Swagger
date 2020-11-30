@@ -1,3 +1,9 @@
+## Install the required packages
+```bash
+
+pip install -r requirements.txt
+```
+
 ## Create sqlite database and tables
 ```bash
 
@@ -29,9 +35,9 @@ python manage.py test
 
 ## Create a new player
 ```bash
-Post /players/
+POST /players/
 
-{
+data = {
     "name": "test",
     "address": "test",
     "points": 0,
@@ -46,11 +52,12 @@ GET /players/<pk>
 
 ## Delete a player
 ```bash
-Delete /players/<pk>
+DELETE /players/<pk>
 ```
 
 ## Update score of a player
-/pointsUpdate/<pk>/
+```bash
+POST /pointsUpdate/<pk>/
 
 {
     "action" : "plus"
@@ -61,3 +68,4 @@ or
 {
     "action" : "minus"
 }
+```
