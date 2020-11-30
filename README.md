@@ -20,7 +20,7 @@ python manage.py runserver
 [localhost:8000/docs](http://localhost:8000/docs/)
 
 
-## Run taste cases in scoreboard/tests.py
+## Run test cases in scoreboard/tests.py
 ```bash
 python manage.py test
 ```
@@ -30,7 +30,7 @@ python manage.py test
 
 ## Get players list
 ```bash
-/players/
+GET /players/
 ```
 
 ## Create a new player
@@ -59,13 +59,13 @@ DELETE /players/<pk>
 ```bash
 POST /pointsUpdate/<pk>/
 
-{
+data = {
     "action" : "plus"
 }
 
 or 
 
-{
+data = {
     "action" : "minus"
 }
 ```
