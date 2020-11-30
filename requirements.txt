@@ -1,0 +1,6 @@
+uritemplate
+django
+djangorestframework
+markdown       
+django-filter
+SQLAlchemy
